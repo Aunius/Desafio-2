@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="style.css">
     <!--script bootstrap java-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="scripts_contacto.js"></script>
 
     <title>Veterinaria Cuki</title>
 </head>
@@ -56,26 +58,33 @@
 
 <!--Form-->
     <div class="container-fluid">
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tu Nombre">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-light">Numero de Telefono</label>
-                    <input type="number" class="form-control" id="exampleFormControlInput1 " placeholder="Tu numero de Telefono">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com">
-                </div>
-                <div class="mb-3">
-                    <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu mensaje..."></textarea>
+        <form action="#!" id="form_contacto">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Nombre</label>
+                        <input type="text" class="form-control" id="contact_nombre" placeholder="Tu Nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Numero de Telefono</label>
+                        <input type="number" class="form-control" id="exampleFormControlInput1 " placeholder="Tu numero de Telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="correo@example.com">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label text-light">Mensaje</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu mensaje..."></textarea>
+                    </div>
                 </div>
             </div>
-        </div>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center mb-5">
+                <button type="submit" class="btn btn-info">Enviar</button>
+                <button type="reset" class="btn btn-warning">Limpiar</button>
+            </div>
+        </form>
     </div>
 
 </body>
